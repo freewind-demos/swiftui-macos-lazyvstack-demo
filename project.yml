@@ -11,6 +11,7 @@ targets:
   SwiftUILazyVStackDemo:
     type: application
     platform: macOS
+    productName: SwiftUILazyVStackDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUILazyVStackDemo:
+    build:
+      targets:
+        SwiftUILazyVStackDemo: all
+    run:
+      config: Debug
